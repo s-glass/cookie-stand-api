@@ -18,7 +18,7 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
-    DEBUG=(bool, False),
+    DEBUG=(bool, True),
     ENVIRONMENT=(str, "PRODUCTION"),
     ALLOW_ALL_ORIGINS=(bool, False),
     ALLOWED_HOSTS=(list, []),
@@ -29,6 +29,7 @@ env = environ.Env(
     DATABASE_PASSWORD=(str, ""),
     DATABASE_HOST=(str, ""),
     DATABASE_PORT=(int, 5432),
+
 )
 
 environ.Env.read_env()
@@ -38,7 +39,8 @@ ENVIRONMENT = env.str("ENVIRONMENT")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
-SECRET_KEY = env.str("SECRET_KEY")
+# SECRET_KEY = env.str("SECRET_KEY")
+SECRET_KEY='django-insecure-dz!ffr5u8&f!ngflh9)els@hktjq8s8wa$3=tcdgs4c0cc%uqa'
 
 DEBUG = env.bool("DEBUG")
 

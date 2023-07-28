@@ -1,0 +1,12 @@
+SECRET_KEY='django-insecure--=nyyi9cv*2o%##r4+2k&g$vyma5%7a-%iu8abx93v(2q=7r!+'
+DEBUG=True
+
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1']
+ALLOW_ALL_ORIGINS=True
+
+DATABASE_ENGINE=django.db.backends.postgresql
+DATABASE_NAME=thbbkhzc
+DATABASE_USER=thbbkhzc
+DATABASE_PASSWORD=dTE_N9E7w_ACenZCX2HYJU9y8T8OLdxV
+DATABASE_HOST=mahmud.db.elephantsql.com
+DATABASE_PORT=5432
