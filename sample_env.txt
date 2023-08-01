@@ -4,6 +4,9 @@ DEBUG=True
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1']
 ALLOW_ALL_ORIGINS=True
 
+superuser_login: "admin"
+superuser_pw: "1234"
+
 DATABASE_ENGINE=django.db.backends.postgresql
 DATABASE_NAME=thbbkhzc
 DATABASE_USER=thbbkhzc
