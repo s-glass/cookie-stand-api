@@ -7,12 +7,12 @@ from .permissions import IsOwnerOrReadOnly
 from .serializers import CookieStandSerializer
 
 
-class CookieStandListView(ListCreateAPIView):
+class CookieStandList(ListCreateAPIView):
     queryset = CookieStand.objects.all()
     serializer_class = CookieStandSerializer
 
 
-class CookieStandDetailView(RetrieveUpdateDestroyAPIView):
+class CookieStandDetail(RetrieveUpdateDestroyAPIView):
     permission_classes = (IsOwnerOrReadOnly,)
     queryset = CookieStand.objects.all()
     serializer_class = CookieStandSerializer
