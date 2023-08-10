@@ -1,7 +1,7 @@
 SECRET_KEY='django-insecure--=nyyi9cv*2o%##r4+2k&g$vyma5%7a-%iu8abx93v(2q=7r!+'
 DEBUG=True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1','cookie-stand-api-dusky.vercel.app']
 ALLOW_ALL_ORIGINS=True
 
 superuser_login: "admin"
